@@ -4,7 +4,8 @@
   "description": "Telegram-бот для изучения технического английского языка разработчиками.",
   "type": "module",
   "scripts": {
-    "start": "node src/bot.js"
+    "start": "node src/bot.js",
+    "lint": "eslint src"
   },
   "keywords": [
     "telegram",
@@ -23,5 +24,10 @@
   },
   "bugs": {
     "url": "https://github.com/enotstitch/dev-lex/issues"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.7.0"
   }
 }
