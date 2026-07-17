@@ -6,7 +6,12 @@
   "scripts": {
     "start": "node src/bot.js",
     "lint": "eslint src",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.js": "eslint --no-cache --fix --max-warnings=0",
+    "*.{js,css,md}": "prettier --write"
   },
   "keywords": [
     "telegram",
@@ -31,6 +36,8 @@
     "eslint": "^9.39.5",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.7.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.9.5"
   }
 }
