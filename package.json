@@ -1,0 +1,27 @@
+{
+  "name": "dev-lex",
+  "version": "1.0.0",
+  "description": "Telegram-бот для изучения технического английского языка разработчиками.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/bot.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "grammy",
+    "javascript",
+    "english",
+    "developer"
+  ],
+  "author": "Anna Kessler",
+  "license": "MIT",
+  "homepage": "https://github.com/enotstitch/dev-lex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enotstitch/dev-lex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enotstitch/dev-lex/issues"
+  }
+}
