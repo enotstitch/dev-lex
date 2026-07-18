@@ -1,7 +1,10 @@
-const test = 'test';
+import 'dotenv/config';
+import { Bot } from 'grammy';
 
-const testFunc = () => {
-  return test;
-};
+const bot = new Bot(process.env.BOT_TOKEN);
 
-testFunc();
+bot.command('start', (ctx) => {
+  ctx.reply('Привет! Я DevLex — бот для изучения технического английского.');
+});
+
+bot.start();
